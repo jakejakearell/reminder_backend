@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 describe "User Creation" do
   describe 'Happy Paths' do
     it "can create a message" do
