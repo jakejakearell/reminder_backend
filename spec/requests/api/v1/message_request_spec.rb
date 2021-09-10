@@ -11,7 +11,7 @@ describe "User Creation" do
 
       headers = {"CONTENT_TYPE" => "application/json", 'ACCEPT' => 'application/json' }
 
-      post "/api/v1/message", headers: headers, params: body, as: :json
+      post "/api/v1/reminder", headers: headers, params: body, as: :json
 
       expect(response).to be_successful
       expect(response.status).to eq(201)
