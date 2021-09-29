@@ -14,7 +14,7 @@ describe "User Creation" do
       post "/api/v1/reminder", headers: headers, params: body, as: :json
 
       expect(response).to be_successful
-      expect(response.status).to eq(201)
+      expect(response.status).to eq(204)
 
       # message_json = JSON.parse(response.body, symbolize_names: true)
     end
